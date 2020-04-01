@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fd3d4d3e-65b6-4b1b-80eb-9f20c2cf99fc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/CarDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/CarDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/DailyReportDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/DailyReportDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/web4.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/CarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/DailyReportService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/DailyReportService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/ProducerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/ProducerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/DBHelper.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>list(</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZAw3ptQ44x10kqCtjX7LCXCCgT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="C:/android-sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="lessc" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="util" />
+      <recent name="model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="web4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd3d4d3e-65b6-4b1b-80eb-9f20c2cf99fc" name="Default" comment="" />
+      <created>1563202819097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563202819097</updated>
+      <workItem from="1563202827797" duration="9064000" />
+      <workItem from="1584295021259" duration="3928000" />
+      <workItem from="1584384636806" duration="997000" />
+      <workItem from="1584508007934" duration="624000" />
+      <workItem from="1584557133284" duration="5250000" />
+      <workItem from="1584807606331" duration="925000" />
+      <workItem from="1584817301193" duration="5127000" />
+      <workItem from="1584861649930" duration="2813000" />
+      <workItem from="1584872036287" duration="1214000" />
+      <workItem from="1584874127673" duration="7676000" />
+      <workItem from="1584938408160" duration="2649000" />
+      <workItem from="1584980658146" duration="94000" />
+      <workItem from="1584980814108" duration="720000" />
+      <workItem from="1585074354119" duration="6443000" />
+      <workItem from="1585109034651" duration="5294000" />
+      <workItem from="1585150420923" duration="4368000" />
+      <workItem from="1585167745096" duration="6090000" />
+      <workItem from="1585245482652" duration="894000" />
+      <workItem from="1585247294590" duration="1401000" />
+      <workItem from="1585285519251" duration="990000" />
+      <workItem from="1585318261661" duration="19558000" />
+      <workItem from="1585341628183" duration="15958000" />
+      <workItem from="1585378660700" duration="5892000" />
+      <workItem from="1585385309301" duration="8985000" />
+      <workItem from="1585421420406" duration="2962000" />
+      <workItem from="1585755350407" duration="887000" />
+      <workItem from="1585756382453" duration="416000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="238" y="0" width="800" height="669" key="#Project_Structure" timestamp="1584872994908">
+      <screen x="0" y="0" width="1280" height="670" />
+    </state>
+    <state x="238" y="0" width="800" height="669" key="#Project_Structure/0.0.1280.670@0.0.1280.670" timestamp="1584872994908" />
+    <state x="449" y="55" width="374" height="572" key="#com.intellij.ide.util.MemberChooser" timestamp="1585332028017">
+      <screen x="0" y="0" width="1280" height="694" />
+    </state>
+    <state x="449" y="55" width="374" height="572" key="#com.intellij.ide.util.MemberChooser/0.0.1280.694@0.0.1280.694" timestamp="1585332028017" />
+    <state x="492" y="233" width="292" height="213" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584295051157">
+      <screen x="0" y="0" width="1280" height="670" />
+    </state>
+    <state x="492" y="233" width="292" height="213" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.670@0.0.1280.670" timestamp="1584295051157" />
+    <state x="455" y="108" width="424" height="481" key="FileChooserDialogImpl" timestamp="1584938914026">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="426" y="99" width="424" height="481" key="FileChooserDialogImpl/0.0.1280.670@0.0.1280.670" timestamp="1584882729412" />
+    <state x="455" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584938914026" />
+    <state width="1230" height="165" key="GridCell.Tab.0.bottom" timestamp="1585756797888">
+      <screen x="0" y="0" width="1280" height="694" />
+    </state>
+    <state width="1230" height="145" key="GridCell.Tab.0.bottom/0.0.1280.670@0.0.1280.670" timestamp="1585248695603" />
+    <state width="1230" height="165" key="GridCell.Tab.0.bottom/0.0.1280.694@0.0.1280.694" timestamp="1585756797888" />
+    <state width="1314" height="210" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584942155451" />
+    <state width="1230" height="165" key="GridCell.Tab.0.center" timestamp="1585756797887">
+      <screen x="0" y="0" width="1280" height="694" />
+    </state>
+    <state width="1230" height="145" key="GridCell.Tab.0.center/0.0.1280.670@0.0.1280.670" timestamp="1585248695603" />
+    <state width="1230" height="165" key="GridCell.Tab.0.center/0.0.1280.694@0.0.1280.694" timestamp="1585756797887" />
+    <state width="1314" height="210" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584942155450" />
+    <state width="1230" height="165" key="GridCell.Tab.0.left" timestamp="1585756797887">
+      <screen x="0" y="0" width="1280" height="694" />
+    </state>
+    <state width="1230" height="145" key="GridCell.Tab.0.left/0.0.1280.670@0.0.1280.670" timestamp="1585248695603" />
+    <state width="1230" height="165" key="GridCell.Tab.0.left/0.0.1280.694@0.0.1280.694" timestamp="1585756797887" />
+    <state width="1314" height="210" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584942155449" />
+    <state width="1230" height="165" key="GridCell.Tab.0.right" timestamp="1585756797888">
+      <screen x="0" y="0" width="1280" height="694" />
+    </state>
+    <state width="1230" height="145" key="GridCell.Tab.0.right/0.0.1280.670@0.0.1280.670" timestamp="1585248695603" />
+    <state width="1230" height="165" key="GridCell.Tab.0.right/0.0.1280.694@0.0.1280.694" timestamp="1585756797888" />
+    <state width="1314" height="210" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584942155450" />
+    <state x="331" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1585421420789">
+      <screen x="0" y="0" width="1280" height="694" />
+    </state>
+    <state x="331" y="171" key="com.intellij.ide.util.TipDialog/0.0.1280.670@0.0.1280.670" timestamp="1585285532033" />
+    <state x="331" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.694@0.0.1280.694" timestamp="1585421420789" />
+    <state x="353" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584938437598" />
+  </component>
+</project>
