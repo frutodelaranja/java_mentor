@@ -114,17 +114,4 @@ public class UserHibernateDao implements UserDao {
         }
         return false;
     }
-
-//    public boolean deleteUser(Long id) {
-//        session = sessionFactory.openSession();
-//        try {
-//            int yes = session.createQuery("DELETE User WHERE id = :id").setParameter("id", id).executeUpdate();
-//            return yes > 0;
-//        } catch (HibernateException e) {
-//            e.printStackTrace();
-//        }finally {
-//            session.close();
-//        }
-//        return false;
-//    }
 }
