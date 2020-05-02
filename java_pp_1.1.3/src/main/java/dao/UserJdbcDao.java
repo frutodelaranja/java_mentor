@@ -2,7 +2,6 @@ package dao;
 
 import model.User;
 import util.DBHelper;
-import util.UserDao;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -25,10 +24,10 @@ public class UserJdbcDao implements UserDao {
 
     public boolean addUser( User user){
         try(PreparedStatement statement = connection.prepareStatement("INSERT INTO users(name, login, password) VALUES (?,?,?)");){
-        statement.setString(1, user.getName());
-        statement.setString(2, user.getLogin());
-        statement.setString(3, user.getPassword());
-        return statement.executeUpdate() > 0;
+            statement.setString(1, user.getName());
+            statement.setString(2, user.getLogin());
+            statement.setString(3, user.getPassword());
+            return statement.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
@@ -46,25 +45,6 @@ public class UserJdbcDao implements UserDao {
             return false;
         }
     }
-
-//    public User getUser(User user) {
-//        User isUser = new User();
-//        try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM users WHERE login=? AND password=?");) {
-//            statement.setString(1, user.getLogin());
-//            statement.setString(2, user.getPassword());
-//            ResultSet result = statement.executeQuery();
-//            if (result.next()) {
-//                isUser.setId(result.getLong(1));
-//                isUser.setName(result.getString(2));
-//                isUser.setLogin(result.getString(3));
-//                isUser.setPassword(result.getString(4));
-//            }
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return isUser;
-//    }
 
     public User getUser(Long id) {
         User isUser = new User();
@@ -132,6 +112,4 @@ public class UserJdbcDao implements UserDao {
             return false;
         }
     }
-
-
 }

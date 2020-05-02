@@ -1,4 +1,4 @@
-package util;
+package dao;
 
 import model.User;
 
@@ -17,5 +17,4 @@ public interface UserDao {
     public boolean updateUser(User user);
 
     public boolean deleteUser(Long id);
-
 }

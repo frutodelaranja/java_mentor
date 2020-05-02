@@ -1,5 +1,6 @@
 package servlets;
 
+
 import model.User;
 import service.Service;
 import service.UserService;
@@ -10,19 +11,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-@WebServlet("/add")
-public class AddServlet extends HttpServlet {
+
+@WebServlet("/")
+public class HomeServlet extends HttpServlet {
+    Service service = UserService.getInstance();
+
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        req.getRequestDispatcher("/add.jsp").forward(req,resp);
+        req.setAttribute("users", service.getAllUsers());
+        req.getRequestDispatcher("/home.jsp").forward(req,resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserService service= UserService.getInstance();
         User user = new User();
-        user.setId(Long.valueOf(service.getAllUsers().size()));
         user.setName(req.getParameter("name"));
         user.setLogin(req.getParameter("mail"));
         user.setPassword(req.getParameter("pass"));
@@ -31,15 +35,11 @@ public class AddServlet extends HttpServlet {
                 req.setAttribute("userName", user.getName());
                 doGet(req, resp);
             }else {
-                req.setAttribute("userName", null);
                 doGet(req, resp);
             }
         }else {
-            req.setAttribute("userName", null);
             doGet(req, resp);
         }
-
-
     }
     private boolean validate(User user){
         boolean name = (!user.getName().equals("") && !user.getName().equals(" ") && !user.getName().equals("0") && user.getName() != null);

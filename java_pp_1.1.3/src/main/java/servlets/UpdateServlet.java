@@ -20,7 +20,7 @@ public class UpdateServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserService service= UserService.getInstance();
+        Service service= UserService.getInstance();
         User user = new User();
         user.setId(Long.valueOf(req.getParameter("id")));
         user.setName(req.getParameter("name"));
@@ -28,8 +28,7 @@ public class UpdateServlet extends HttpServlet {
         user.setPassword(req.getParameter("pass"));
         if (validate(user)){
             if (service.updateUser(user)){
-                req.setAttribute("userName", user.getName());
-                doGet(req, resp);
+                req.getRequestDispatcher("/").forward(req,resp);
             }else {
                 req.setAttribute("userName", null);
                 doGet(req, resp);

@@ -1,13 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: evgeny
-  Date: 25.04.2020
-  Time: 17:59
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <html>
 <head>
     <title>Title</title>
@@ -16,11 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<div class="w3-container w3-blue-grey w3-opacity w3-left-align">
+    <h1>Java PP</h1>
+</div>
+<br>
 <div class="w3-container">
     <div class="w3-responsive">
-
+        <h2 class="w3-center">Зыс из эээ Чебурнет. Список чебурашек, способных быть удалёнными и изменёнными</h2></br>
         <table class="w3-table  w3-striped w3-centered w3-bordered w3-border w3-hoverable ">
-            <caption>Таблица 1.0 Список чебурашек</caption>
             <tr class="w3-grey">
                 <th>User</th>
                 <th>ID</th>
@@ -53,9 +48,8 @@
                         <form action="/update" method="get">
 
                             <div>
-                                    <%--                            <input type="number" name="id" value="${user.getId()}" style="width: 10%"/>--%>
                                 <button type="submit" class="w3-btn w3-hover-amber w3-round" onclick=input name="id"
-                                        value="${user.getId()}">Update <i class="fa fa-refresh fa-spin"></i></button>
+                                        value="${user.getId()}">Update <i class="fa fa-refresh"></i></button>
                             </div>
 
                         </form>
@@ -64,7 +58,6 @@
                     <td>
                         <form action="/delete" method="post">
                             <div>
-                                    <%--                                <input type="submit" name="id" value="${user.getId()}" class="w3-btn w3-hover-red w3-round">Delete</input>--%>
                                 <button type="submit" class="w3-btn w3-hover-pink w3-round" onclick=input name="id"
                                         value="${user.getId()}">Delete <i class='fa fa-recycle'></i></button>
                             </div>
@@ -76,15 +69,32 @@
 
         </table>
 
-        <div class="w3-container w3-center">
-            <div class="w3-bar w3-padding-large w3-padding-24">
-                <%--                <i style="font-size:24px" class="fa fa-refresh fa-spin"></i>--%>
-                <button class="w3-btn w3-hover-lime w3-round-large" onclick="location.href='/add'">Add <i
-                        class='fas fa-user-plus'></i></button>
-            </div>
-        </div>
     </div>
 </div>
+<br>
+<br>
 
+<div class="w3-row">
+    <div class="w3-col  w3-container" style="width:30%"></div>
+    <div class="w3-col  w3-container" style="width:40%">
+        <form action="/" method="post" class="w3-center w3-container w3-card-4 w3-light-grey w3-text-green w3-margin">
+            <h2 class="w3-center">Добавить Чебурашку к Чебурнету</h2>
+            <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user-o"></i></div>
+            <div class="w3-rest">
+                <input type="text" name="name" placeholder="Name" class="w3-input w3-border w3-round"><br/>
+            </div>
+            <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+            <div class="w3-rest">
+                <input type="text" name="mail" placeholder="Email" class="w3-input w3-border w3-round"><br/>
+            </div>
+            <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-lock"></i></div>
+            <div class="w3-rest">
+                <input type="password" name="pass" placeholder="Password" class="w3-input w3-border w3-round"><br/>
+            </div>
+            <button type="submit" class="w3-btn w3-green w3-round w3-margin-bottom">Add <i
+                    class='fa fa-user-plus'></i></button>
+        </form>
+    </div>
+</div>
 </body>
 </html>

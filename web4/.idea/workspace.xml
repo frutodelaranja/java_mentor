@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd3d4d3e-65b6-4b1b-80eb-9f20c2cf99fc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DAO/CarDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/CarDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DAO/DailyReportDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/DailyReportDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/web4.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/CarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/DailyReportService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/DailyReportService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/CustomerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/ProducerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/ProducerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/DBHelper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +46,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/android-sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/JavaEETest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="lessc" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -158,6 +148,9 @@
       <workItem from="1585421420406" duration="2962000" />
       <workItem from="1585755350407" duration="887000" />
       <workItem from="1585756382453" duration="416000" />
+      <workItem from="1586100361148" duration="439000" />
+      <workItem from="1586101035617" duration="1135000" />
+      <workItem from="1586102195308" duration="77000" />
     </task>
     <servers />
   </component>
@@ -177,10 +170,11 @@
       <screen x="0" y="0" width="1280" height="670" />
     </state>
     <state x="492" y="233" width="292" height="213" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.670@0.0.1280.670" timestamp="1584295051157" />
-    <state x="455" y="108" width="424" height="481" key="FileChooserDialogImpl" timestamp="1584938914026">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="426" y="103" width="424" height="481" key="FileChooserDialogImpl" timestamp="1586102270781">
+      <screen x="0" y="0" width="1280" height="694" />
     </state>
     <state x="426" y="99" width="424" height="481" key="FileChooserDialogImpl/0.0.1280.670@0.0.1280.670" timestamp="1584882729412" />
+    <state x="426" y="103" width="424" height="481" key="FileChooserDialogImpl/0.0.1280.694@0.0.1280.694" timestamp="1586102270781" />
     <state x="455" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584938914026" />
     <state width="1230" height="165" key="GridCell.Tab.0.bottom" timestamp="1585756797888">
       <screen x="0" y="0" width="1280" height="694" />
@@ -206,11 +200,19 @@
     <state width="1230" height="145" key="GridCell.Tab.0.right/0.0.1280.670@0.0.1280.670" timestamp="1585248695603" />
     <state width="1230" height="165" key="GridCell.Tab.0.right/0.0.1280.694@0.0.1280.694" timestamp="1585756797888" />
     <state width="1314" height="210" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584942155450" />
-    <state x="331" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1585421420789">
+    <state x="226" y="99" width="824" height="505" key="IDE.errors.dialog" timestamp="1586101074382">
+      <screen x="0" y="0" width="1280" height="694" />
+    </state>
+    <state x="226" y="99" width="824" height="505" key="IDE.errors.dialog/0.0.1280.694@0.0.1280.694" timestamp="1586101074382" />
+    <state x="-317" y="0" width="982" height="694" key="SettingsEditor" timestamp="1586101951617">
+      <screen x="0" y="0" width="1280" height="694" />
+    </state>
+    <state x="-317" y="0" width="982" height="694" key="SettingsEditor/0.0.1280.694@0.0.1280.694" timestamp="1586101951617" />
+    <state x="121" y="142" key="com.intellij.ide.util.TipDialog" timestamp="1586102208288">
       <screen x="0" y="0" width="1280" height="694" />
     </state>
     <state x="331" y="171" key="com.intellij.ide.util.TipDialog/0.0.1280.670@0.0.1280.670" timestamp="1585285532033" />
-    <state x="331" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.694@0.0.1280.694" timestamp="1585421420789" />
+    <state x="121" y="142" key="com.intellij.ide.util.TipDialog/0.0.1280.694@0.0.1280.694" timestamp="1586102208288" />
     <state x="353" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584938437598" />
   </component>
 </project>
