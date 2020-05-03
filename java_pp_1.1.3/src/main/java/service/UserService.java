@@ -1,17 +1,15 @@
 package service;
 
 import dao.UserDao;
-import dao.UserHibernateDao;
-import dao.UserJdbcDao;
 import model.User;
-
+import util.UserDaoFactory;
 import java.util.List;
 
 public class UserService implements Service {
     private static UserService userService;
     private UserDao dao;
     private UserService(){
-        dao = new UserHibernateDao();
+        dao = new UserDaoFactory().getDao();
     }
 
     public static UserService getInstance() {
@@ -52,7 +50,5 @@ public class UserService implements Service {
     public boolean deleteUser(Long id) {
         return dao.deleteUser(id);
     }
-
-
 
 }

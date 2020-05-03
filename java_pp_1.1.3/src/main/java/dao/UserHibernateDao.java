@@ -2,17 +2,31 @@ package dao;
 
 import model.User;
 import org.hibernate.*;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Restrictions;
+import org.hibernate.service.ServiceRegistry;
 import util.DBHelper;
 
 import java.util.List;
 
 public class UserHibernateDao implements UserDao {
+    DBHelper dbHelper;
+    Configuration configuration;
     private SessionFactory sessionFactory;
     private Session session;
 
     public UserHibernateDao() {
-        this.sessionFactory = DBHelper.getSessionFactory();
+        this.dbHelper = DBHelper.getInstance();
+        this.configuration = dbHelper.getConfiguration();
+        this.sessionFactory = getSessionFactory();
+    }
+
+    public SessionFactory getSessionFactory() {
+        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder();
+        builder.applySettings(configuration.getProperties());
+        ServiceRegistry serviceRegistry = builder.build();
+        return sessionFactory = configuration.buildSessionFactory(serviceRegistry);
     }
 
     @Override
@@ -27,7 +41,7 @@ public class UserHibernateDao implements UserDao {
         } catch (HibernateException e) {
             e.printStackTrace();
             session.getTransaction().rollback();
-        } finally {
+        }finally {
             session.close();
         }
         return false;
@@ -37,27 +51,44 @@ public class UserHibernateDao implements UserDao {
     public boolean thisUserExists(User user) {
         session = sessionFactory.openSession();
         try {
-            Criteria criteria = session.createCriteria(User.class);
-            criteria.add(Restrictions.eq("login",user.getLogin()));
-            User userOld = (User) criteria.uniqueResult();
-            return userOld != null ? true : false;
+            Transaction transaction = session.beginTransaction();
+            List<User> users = session.createQuery("FROM User WHERE login = :login").setParameter("login", user.getLogin()).list();
+            transaction.commit();
+            return !users.isEmpty();
         } catch (HibernateException e) {
             e.printStackTrace();
-        } finally {
+        }finally {
             session.close();
         }
         return false;
     }
 
+//    @Override
+//    public boolean thisUserExists(User user) {
+//        session = sessionFactory.openSession();
+//        try {
+//            Criteria criteria = session.createCriteria(User.class);
+//            criteria.add(Restrictions.eq("login",user.getLogin()));
+//            User userOld = (User) criteria.uniqueResult();
+//            return userOld != null ? true : false;
+//        } catch (HibernateException e) {
+//            e.printStackTrace();
+//        } finally {
+//            session.close();
+//        }
+//        return false;
+//    }
+
     @Override
     public User getUser(Long id) {
         session = sessionFactory.openSession();
         try {
+//            User user = (User) session.createQuery("FROM User WHERE id = :id").setParameter("id", id);
             User user = (User) session.load(User.class, id);
             return user;
         } catch (HibernateException e) {
             e.printStackTrace();
-        } finally {
+        }finally {
             session.close();
         }
         return null;
@@ -67,11 +98,12 @@ public class UserHibernateDao implements UserDao {
     public List<User> getAllUsers() {
         session = sessionFactory.openSession();
         try {
+//            List<User> users = session.createQuery("FROM User").list();
             List<User> users = session.createCriteria(User.class).list();
             return users;
         } catch (HibernateException e) {
             e.printStackTrace();
-        } finally {
+        }finally {
             session.close();
         }
         return null;
@@ -80,7 +112,7 @@ public class UserHibernateDao implements UserDao {
     @Override
     public boolean updateUser(User user) {
         session = sessionFactory.openSession();
-        try {
+        try{
             Transaction transaction = session.beginTransaction();
             session.update(user);
             boolean yes = session.contains(user);
@@ -89,7 +121,7 @@ public class UserHibernateDao implements UserDao {
         } catch (HibernateException e) {
             e.printStackTrace();
             session.getTransaction().rollback();
-        } finally {
+        }finally {
             session.close();
         }
         return false;
@@ -100,7 +132,7 @@ public class UserHibernateDao implements UserDao {
         session = sessionFactory.openSession();
         try {
             Transaction transaction = session.beginTransaction();
-            User user = (User) session.load(User.class, id);
+            User user = (User) session.load(User.class,id);
             session.delete(user);
             boolean yes = session.contains(user);
             transaction.commit();
@@ -109,9 +141,24 @@ public class UserHibernateDao implements UserDao {
             e.printStackTrace();
             session.getTransaction().rollback();
 
-        } finally {
+        }finally {
             session.close();
         }
         return false;
     }
+
+//    public boolean deleteUser(Long id) {
+//        session = sessionFactory.openSession();
+//        try {
+//            int yes = session.createQuery("DELETE User WHERE id = :id").setParameter("id", id).executeUpdate();
+//            return yes > 0;
+//        } catch (HibernateException e) {
+//            e.printStackTrace();
+//        }finally {
+//            session.close();
+//        }
+//        return false;
+//    }
+
+
 }

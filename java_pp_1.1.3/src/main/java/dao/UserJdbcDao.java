@@ -8,15 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserJdbcDao implements UserDao {
+    DBHelper dbHelper = DBHelper.getInstance();
     Connection connection;
 
     {
         try {
-            connection = new DBHelper().getConnection();
-        } catch (SQLException e) {
-            e.printStackTrace();
+            connection = dbHelper.getConnection();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
     }
+
 
     public UserJdbcDao() {
     }
@@ -45,6 +47,25 @@ public class UserJdbcDao implements UserDao {
             return false;
         }
     }
+
+//    public User getUser(User user) {
+//        User isUser = new User();
+//        try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM users WHERE login=? AND password=?");) {
+//            statement.setString(1, user.getLogin());
+//            statement.setString(2, user.getPassword());
+//            ResultSet result = statement.executeQuery();
+//            if (result.next()) {
+//                isUser.setId(result.getLong(1));
+//                isUser.setName(result.getString(2));
+//                isUser.setLogin(result.getString(3));
+//                isUser.setPassword(result.getString(4));
+//            }
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return isUser;
+//    }
 
     public User getUser(Long id) {
         User isUser = new User();
@@ -112,4 +133,6 @@ public class UserJdbcDao implements UserDao {
             return false;
         }
     }
+
+
 }
